@@ -37,22 +37,4 @@
       return $diceRolls;
     }
   }
-
-  $firstRoll = rolldice(6,6);
-  print_r($firstRoll)
-  //echo "<img"
-
-  if ($_POST[submitted])
-    {
-        echo $firstRoll;
-
-    }
-    else
-    {
-    echo <<< _ENDOFFORM_
-      <form method="post" action="$_SERVER[SCRIPT_NAME]">
-      <input type="submit" name="submitted" />
-      </form>
-_ENDOFFORM_;
-  }
 ?>

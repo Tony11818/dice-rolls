@@ -20,16 +20,25 @@
   $diceRolls = array();
 
   //variables for amount of dice and sides
-  $numdice = 6;
-  $numsides = 6;
-
-  for ($i = 1; $i <= $numdice; $i++) {
-    $currentRoll = mt_rand(1,$numsides);
-    $totalRolls[] = $currentRoll;
-    echo "<div class='roll-container'><img src='images/$totalRolls.png'></div><br>"
+  function rolldice(int $numsides, int $numdice =1): int
+  {
+    if ( $numsides == 0 or $numdice == 0 )
+    {
+      return 0;
+    }
+    elseif ( $numdice == 1 )
+    {
+      $value = mt_rand(1,$numsides);
+      return $value;
+    }
+    else
+    {
+      $value = 0;
+      for ( $i = 1; $i <= $numdice; $i++)
+      {
+        $value = $value + mt_rand(1,$numsides);
+      }
+      return $value;
+    }
   }
-
-   /*
-      Multi Line comment
-    */
 ?>

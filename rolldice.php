@@ -24,7 +24,6 @@
   //function to get array
   function rolldice(int $numsides, int $numdice): array
   {
-    $diceRolls = array();
     if ( $numsides == 0 or $numdice == 0 )
     {
       return $diceRolls;

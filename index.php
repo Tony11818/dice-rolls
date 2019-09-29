@@ -12,7 +12,8 @@
   <body>
     <h1> Dice Roll Game!</h1>
 
-
-    <?php include("rolldice.php"); ?>
+    <div>
+      <?php include("rolldice.php"); ?>
+    </div>
   </body>
 </html>

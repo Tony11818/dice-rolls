@@ -41,4 +41,20 @@
   $firstRoll = rolldice(6,6);
   print_r($firstRoll)
   //echo "<img"
+
+  if ($_POST[submitted])
+    {
+        echo "Process form";
+
+    }
+    else
+    {
+    echo <<< _ENDOFFORM_
+      <form method="post" action="$_SERVER[SCRIPT_NAME]">
+      <label for="fname">First Name</label>
+      <input type="text" name="first_name" id="fname" /><br />
+      <input type="submit" name="submitted" />
+      </form>
+_ENDOFFORM_;
+  }
 ?>

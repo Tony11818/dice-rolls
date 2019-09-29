@@ -47,6 +47,6 @@
     }
   }
 
-  $firstRoll = rolldice(6,6);
+  $firstRoll = rolldice();
   print_r($firstRoll)
 ?>

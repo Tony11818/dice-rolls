@@ -8,6 +8,6 @@
     <h1> Dice Roll Game!</h1>
 
 
-    <?php include("rolldice.ph"); ?>
+    <?php include("rolldice.php"); ?>
   </body>
 </html>

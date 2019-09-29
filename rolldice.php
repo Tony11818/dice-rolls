@@ -40,4 +40,6 @@
 
   $firstRoll = rolldice(6,6);
   print_r($firstRoll)
+  //echo "<img"
+
 ?>

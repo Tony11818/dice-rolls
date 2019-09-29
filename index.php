@@ -12,14 +12,14 @@
   <body>
     <h1> Dice Roll Game!</h1>
 
+    <form method="POST" action="rolldice.php">
+      <input type="submit" name="submit" value="Roll A Dice">
+    </form>
+
     <div>
       <p>
         <?php include("rolldice.php"); ?>
       </p>
     </div>
-
-    <form method="POST" action="rolldice.php">
-    <input type="submit" name="submit" value="Roll A Dice">
-    </form>
   </body>
 </html>

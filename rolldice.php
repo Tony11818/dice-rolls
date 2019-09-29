@@ -25,25 +25,24 @@
   $numsides = 6;
 
   //function to get array
-  function rolldice(int $numsides, int $numdice): int
+  function rolldice(int $numsides, int $numdice): array
   {
     if ( $numsides == 0 or $numdice == 0 )
     {
-      return 0;
+      return $diceRolls;
     }
     elseif ( $numdice == 1 )
     {
-      $value = mt_rand(1,$numsides);
-      return $value;
+      $diceRolls[] = mt_rand(1,$numsides);
+      return $diceRolls;
     }
     else
     {
-      $value = 0;
       for ( $i = 1; $i <= $numdice; $i++)
       {
-        $value = $value + mt_rand(1,$numsides);
+        $diceRolls[] = mt_rand(1,$numsides);
       }
-      return $value;
+      return $diceRolls;
     }
   }
 

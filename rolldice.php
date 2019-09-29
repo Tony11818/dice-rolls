@@ -37,4 +37,7 @@
       return $diceRolls;
     }
   }
+
+  $firstRoll = rolldice(6,6);
+  print_r($firstRoll)
 ?>

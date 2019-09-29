@@ -17,7 +17,7 @@
   }*/
   // ENDING SESSION COOKIES CODE
   $diceSideImg = array('dice01','dice02','dice03','dice04','dice05','dice06');
-  $diceRolls = array();
+  //$diceRolls = array();
 
   //variables for amount of dice and sides
 
@@ -27,6 +27,7 @@
   //function to get array
   function rolldice(int $numsides, int $numdice): array
   {
+    $diceRolls = array();
     if ( $numsides == 0 or $numdice == 0 )
     {
       return $diceRolls;

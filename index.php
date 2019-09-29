@@ -17,5 +17,9 @@
         <?php include("rolldice.php"); ?>
       </p>
     </div>
+
+    <form method="POST" action="rolldice.php">
+      <input type="submit" name="submit" value="Roll A Dice" style="padding:10px;">
+    </form>
   </body>
 </html>

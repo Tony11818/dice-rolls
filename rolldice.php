@@ -28,11 +28,6 @@
     {
       return $diceRolls;
     }
-  /*  elseif ( $numdice == 1 )
-    {
-      $diceRolls[] = mt_rand(1,$numsides);
-      return $diceRolls;
-    }*/
     else
     {
       for ( $i = 1; $i <= $numdice; $i++)
@@ -45,4 +40,5 @@
 
   $firstRoll = rolldice(6,6);
   print_r($firstRoll)
+  //echo "<img"
 ?>

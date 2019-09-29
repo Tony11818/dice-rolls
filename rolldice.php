@@ -20,7 +20,12 @@
   $diceRolls = array();
 
   //variables for amount of dice and sides
-  function rolldice(int $numsides, int $numdice =1): int
+
+  $numdice = 6;
+  $numsides = 6;
+
+  //function to get array
+  function rolldice(int $numsides, int $numdice): int
   {
     if ( $numsides == 0 or $numdice == 0 )
     {
@@ -41,4 +46,7 @@
       return $value;
     }
   }
+
+  $firstRoll = rolldice();
+  print_r($firstRoll)
 ?>

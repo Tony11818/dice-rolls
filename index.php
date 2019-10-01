@@ -10,7 +10,6 @@
     <meta name="keywords" content="Dice Roll With PHP"/>
   </head>
   <body>
-    <h1> Dice Roll Game!</h1>
 
     <div>
       <p>
@@ -20,10 +19,5 @@
         ?>
       </p>
     </div>
-
-    <form method="POST" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
-      <input type="submit" name="submit" value="Roll A Dice">
-    </form>
-
   </body>
 </html>

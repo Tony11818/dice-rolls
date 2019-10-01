@@ -3,7 +3,7 @@
   declare(strict_types=1);
 
   // STARTING SESSION COOKIES CODE
-/*  $yourpath = dirname($_SERVER['SCRIPT_NAME']). '/';
+  $yourpath = dirname($_SERVER['SCRIPT_NAME']). '/';
   $sessionoptions = [ 'lifetime' => 0, 'path'=> $yourpath,'secure' => TRUE, 'httponly' => TRUE];
   session_set_cookie_params ($sessionoptions);
   session_start();
@@ -14,7 +14,7 @@
     session_unset();
     session_destroy();
     setcookie(session_name(),"",time() - 3600, $cookiepath);
-  }*/
+  }
   // ENDING SESSION COOKIES CODE
   $diceSideImg = array('dice01','dice02','dice03','dice04','dice05','dice06');
   $diceRolls = array();

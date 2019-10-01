@@ -12,9 +12,11 @@
   <body>
     <h1> Dice Roll Game!</h1>
 
-    <form method="POST" action="rolldice.php">
+    <form method="POST" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
       <input type="submit" name="submit" value="Roll A Dice">
     </form>
+
+
 
     <div>
       <p>

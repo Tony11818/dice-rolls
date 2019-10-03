@@ -43,6 +43,7 @@
   $totalRolls[] = $_SESSION['pastRolls'];
   $totalRolls[] = $firstRoll;
   $_SESSION['pastRolls'] = $totalRolls;
+  echo "<br>";
   print_r($totalRolls);
   echo "<br>";
 

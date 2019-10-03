@@ -37,9 +37,10 @@
       return $diceRolls;
     }
   }
-  
+
   $firstRoll = rolldice(6,6);
-  print_r($firstRoll)
-  //echo "<img"
+  print_r($firstRoll);
+  $totalRolls[] = $firstRoll;
+  print_r($totalRolls);
 
 ?>

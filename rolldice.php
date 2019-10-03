@@ -44,6 +44,6 @@
   $totalRolls[] = $firstRoll;
   $_SESSION['pastRolls'] = $totalRolls;
   print_r($totalRolls);
-  echo "<br>;
+  echo "<br>";
 
 ?>

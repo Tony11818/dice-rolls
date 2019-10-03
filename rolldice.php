@@ -3,8 +3,7 @@
   declare(strict_types=1);
 
   // STARTING SESSION COOKIES CODE
-  $yourpath = dirname($_SERVER['SCRIPT_NAME']). '/';
-  $sessionoptions = [ 'lifetime' => 0, 'path'=> $yourpath,'secure' => TRUE, 'httponly' => TRUE];
+  $yourpath = dirname($_SERVER['SCRIPT_NAME']). '/'; $sessionoptions = [ 'lifetime' => 0, 'path'=> $yourpath,'secure' => TRUE, 'httponly' => TRUE];
   session_set_cookie_params ($sessionoptions);
   session_start();
   session_regenerate_id();

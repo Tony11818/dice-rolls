@@ -19,7 +19,6 @@
   $diceRolls = array();
 
 //function to attach images to array
-  function rollOut
 
   //function to get array
   function rolldice(int $numsides, int $numdice): array
@@ -39,11 +38,10 @@
   }
 
   $firstRoll = rolldice(6,6);
-  print_r($firstRoll);
+  //print_r($firstRoll);
   echo "<br>";
   $totalRolls[] = $_SESSION['pastRolls'];
   $totalRolls[] = $firstRoll;
-  $_SESSION['pastRolls'] = $totalRolls;
   echo "<br>";
   print_r($totalRolls);
   echo "<br>";

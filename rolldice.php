@@ -51,12 +51,12 @@
   }
 
   $firstRoll = rolldice(6,6);
-  print_r($firstRoll);
+  //print_r($firstRoll);
   echo "<br>";
   //$totalRolls[] = $_SESSION['pastRolls'];
   $totalRolls[] = $firstRoll;
   echo "<br>";
-  print_r($totalRolls);
+  //print_r($totalRolls);
   echo "<br>";
 
 ?>

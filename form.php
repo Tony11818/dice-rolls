@@ -21,8 +21,10 @@
             if(!isset($_SESSION['name'])){
                 $_SESSION['name'] = $_POST['name'];
                 echo "<p>What's up ".$_POST['name']."! Roll 10 times and try to get your highest score!</p>";
+                echo $firstRoll;
             } else {
                 echo "<p>Keep rolling ".$_SESSION['name']."!</p>";
+                echo $totalRolls;
             }
         }
     ?>

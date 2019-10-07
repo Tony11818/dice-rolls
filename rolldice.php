@@ -47,6 +47,7 @@
         $diceRolls[] = mt_rand(1,$numsides);
       }
       return $diceRolls;
+      
     }
   }
 

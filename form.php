@@ -8,13 +8,20 @@
         unset($totalRolls);
     ?>
       <label for="name">Players Name:</label>
-      <br/>
+      <br>
       <input
         name="name"
         type="text"
         id="name"
         required
       />
+      <br>
+      <input
+        name="rollDice"
+        value="Roll Dice"
+        type="submit"
+      />
+      <br>
     <?php
         } else {
             echo '<input type="hidden" id="name" name="name" value=' . $_SESSION['name'] . '>';

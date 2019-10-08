@@ -2,7 +2,7 @@
 
     <form method="POST" action="<?php echo $_SERVER['SCRIPT_NAME'] ?>">
     <?php
-      if (!isset($_POST['name']))
+      if (!isset($_POST['name']) || isset($_POST['clear']))
       {
         killsession($yourpath);
         unset($totalRolls);
@@ -16,12 +16,6 @@
         required
       />
       <br>
-      <input
-        name="rollDice"
-        value="Roll Dice"
-        type="submit"
-      />
-      <br>
     <?php
         } else {
             echo '<input type="hidden" id="name" name="name" value=' . $_SESSION['name'] . '>';
@@ -33,6 +27,12 @@
             }
           }
     ?>
+<br>
+<input
+  name="clear"
+  value="clear rolls"
+  type="submit"
+/>
 <br/>
 <input
     name="rollDice"

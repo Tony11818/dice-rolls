@@ -35,12 +35,6 @@
             }
         }
     ?>
-<br/>
-<input
-    name="rollDice"
-    value="Roll Dice"
-    type="submit"
-/>
 </form>
   </body>
 </html>

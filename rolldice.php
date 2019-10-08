@@ -4,19 +4,6 @@
   $yourpath = dirname($_SERVER['SCRIPT_NAME']). '/';
   $lifetime = 0;  //0 expires when browser closes, otherwise time in seconds
   session_set_cookie_params ($lifetime,$yourpath);
-  /* Trying to set your own domain, secure and httponly seems to be blocked
-     in modern browsers, and is assumed on if it can.
-     Some Diagnostics you could run if you wanted:
-      echo "<b>Diagnostic Information</b><br />\n";
-
-      echo "Session Name: " . session_name() . "<br />\n";
-      echo "Session ID: "  . session_id() . "<br />\n";
-      echo "Session Module name: " . session_module_name() . "<br />\n";
-      echo "Session Save Path: " . session_save_path()  . "<br />\n";
-      echo "Encoded Session: " . session_encode() . "<br />\n";
-      print_r(session_get_cookie_params();
-
-  */
   session_start();
   session_regenerate_id();
 
@@ -47,7 +34,7 @@
         $diceRolls[] = mt_rand(1,$numsides);
       }
       return $diceRolls;
-      
+
     }
   }
 

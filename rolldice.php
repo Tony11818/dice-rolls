@@ -14,6 +14,11 @@
     setcookie(session_name(),"",time() - 3600, $cookiepath);
 
   }
+
+  if (isset ($_POST['reset'])) {
+    killsession($yourpath);
+
+  } else if ( isset ($_POST['rollDice'])){
   // ENDING SESSION COOKIES CODE
   $diceSideImg = array('dice01','dice02','dice03','dice04','dice05','dice06');
   $diceRolls = array();
@@ -46,5 +51,5 @@
   echo "<br>";
   print_r($totalRolls);
   echo "<br>";
-
+  }
 ?>

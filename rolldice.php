@@ -34,12 +34,12 @@
     }
     else
     {
-      for ( $i = 1; $i <= $numdice; $i++):array
+      for ( $i = 1; $i <= $numdice; $i++)
       {
         $diceRolls[] = mt_rand(1,$numsides);
         $diceRolls[] = $pastRolls;
       }
-      return $pastRolls;
+      return $diceRolls;
     }
   }
   if (isset($_POST['rollDice'])){

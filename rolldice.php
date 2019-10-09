@@ -39,7 +39,7 @@
         $diceRolls[] = mt_rand(1,$numsides);
         $diceRolls[] = $pastRolls;
       }
-
+      return $pastRolls;
     }
   }
   if (isset($_POST['rollDice'])){

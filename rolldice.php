@@ -19,11 +19,10 @@
     killsession($yourpath);
 
   } else if ( isset ($_POST['rollDice'])){
-  // ENDING SESSION COOKIES CODE
+  
   $diceSideImg = array('dice01','dice02','dice03','dice04','dice05','dice06');
   $diceRolls = array();
 
-//function to attach images to array
 
   //function to get array
   function rolldice(int $numsides, int $numdice):array
@@ -37,22 +36,20 @@
       for ( $i = 1; $i <= $numdice; $i++)
       {
         $diceRolls[] = mt_rand(1,$numsides);
-        $diceRolls[] = $pastRolls;
       }
       return $diceRolls;
     }
   }
-  if (isset($_POST['rollDice'])){
 
+ if(!isset($_SESSION['pastRolls']))
+  {
+    $_SESSION['pastRolls'] = array(rolldice(6,6));
   }
-
-  $firstRoll = rolldice(6,6);
-  print_r($firstRoll);
-  echo "<br>";
-  $totalRolls[] = $_SESSION['pastRolls'];
-  //$totalRolls[] = $firstRoll;
-  echo "<br>";
-  print_r($totalRolls);
+  else
+  {
+    $_SESSION['pastRolls'][] = rolldice(6,6);
+  }
+  print_r($_SESSION['pastRolls']);
   echo "<br>";
   }
 ?>

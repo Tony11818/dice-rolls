@@ -37,10 +37,13 @@
       for ( $i = 1; $i <= $numdice; $i++)
       {
         $diceRolls[] = mt_rand(1,$numsides);
+        $diceRolls[] = $pastRolls;
       }
-      return $diceRolls;
 
     }
+  }
+  if (isset($_POST['rollDice'])){
+
   }
 
   $firstRoll = rolldice(6,6);

@@ -26,7 +26,7 @@
 //function to attach images to array
 
   //function to get array
-  function rolldice(int $numsides, int $numdice): array
+  function rolldice(int $numsides, int $numdice):array
   {
     if ( $numsides == 0 or $numdice == 0 )
     {
@@ -34,7 +34,7 @@
     }
     else
     {
-      for ( $i = 1; $i <= $numdice; $i++)
+      for ( $i = 1; $i <= $numdice; $i++):array
       {
         $diceRolls[] = mt_rand(1,$numsides);
         $diceRolls[] = $pastRolls;

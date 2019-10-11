@@ -19,7 +19,7 @@
     killsession($yourpath);
 
   } else if ( isset ($_POST['rollDice'])){
-  
+
   $diceSideImg = array('dice01','dice02','dice03','dice04','dice05','dice06');
   $diceRolls = array();
 
@@ -48,6 +48,7 @@
   else
   {
     $_SESSION['pastRolls'][] = rolldice(6,6);
+    array_shift($_SESSION['pastRolls']);
   }
   foreach($_SESSION['pastRolls'] as $sessions) {
     $tonysnum = 0;

@@ -14,7 +14,7 @@
     <div>
       <p>
         <?php
-        include("rolldice.php");
+        include("diceroll.php");
         include("form.php");
         ?>
       </p>

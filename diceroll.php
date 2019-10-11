@@ -48,11 +48,16 @@
   else
   {
     $_SESSION['pastRolls'][] = rolldice(6,6);
-    array_shift($_SESSION['pastRolls']);
+    if(count($_SESSION['pastRolls']) > 10 ) 
+    {
+      array_shift($_SESSION['pastRolls']);
+    }
   }
-  foreach($_SESSION['pastRolls'] as $sessions) {
+  foreach($_SESSION['pastRolls'] as $sessions)
+  {
     $tonysnum = 0;
-    foreach($sessions as $dice) {
+    foreach($sessions as $dice)
+    {
     ?><img src="images/dice0<?php echo $dice?>.png"><?php
     $tonysnum = $tonysnum + $dice;
     }
